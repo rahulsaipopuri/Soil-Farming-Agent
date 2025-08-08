@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Post Information</title>
+
+    <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+    <h1>Admin Panel</h1>
+
+
+    <button onclick="logout()">Logout</button>
+
+    <h2>Post Soil Information</h2>
+    <input type="text" id="soil-type" placeholder="Soil Type" required />
+    <textarea id="soil-characteristics" placeholder="Soil Characteristics" required></textarea>
+    <input type="text" id="soil-location" placeholder="Location" required />
+    <input type="text" id="soil-crop" placeholder="Crop Suggestion" required />
+    <button onclick="postSoilDetails()">Post Soil Info</button>
+
+    <h3>Posted Soil Entries</h3>
+    <div id="soil-list"></div>
+
+    <hr>
+
+    <h2>Post Distributor Information</h2>
+    <input type="text" id="distributor-name" placeholder="Distributor Name" required />
+    <input type="text" id="distributor-crop" placeholder="Crop" required />
+    <input type="text" id="distributor-location" placeholder="Location" required />
+    <input type="text" id="distributor-contact" placeholder="Contact Number" required />
+    <button onclick="postDistributorDetails()">Post Distributor Info</button>
+
+    <h3>Posted Distributor Entries</h3>
+    <div id="distributor-list"></div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
